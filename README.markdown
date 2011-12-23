@@ -2,7 +2,7 @@
 SafeManifest
 ============
 
-*SafeManifest* is a simple object providing easy access to configuration files that are written as Python scripts. It will perform the import of the file and provide you attributes that map to the module-level attributes of the config file. *It is safe, only in the fact that missing expected options in the target config return None instead of AttributeErrors.* This allows you to test whether the user has defined certain objects with a conditional instead of a try/except.:
+**SafeManifest** is a simple object providing easy access to configuration files that are written as Python scripts. It will perform the import of the file and provide you attributes that map to the module-level attributes of the config file. **It is safe, only in the fact that missing expected options in the target config return None instead of AttributeErrors.** This allows you to test whether the user has defined certain options (module level attributes) with a conditional instead of a try/except.:
 
 
     >>> from safemanifest import SafeManifest
